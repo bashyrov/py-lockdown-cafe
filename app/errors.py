@@ -1,22 +1,14 @@
-from abc import ABC, abstractmethod
-
-
-class VaccineError(Exception, ABC):
+class VaccineError(Exception):
     pass
 
 
 class NotVaccinatedError(VaccineError):
-
-    @abstractmethod
-    def __str__(self) -> str:
-        return "NotVaccinatedError"
+    pass
 
 
 class OutdatedVaccineError(VaccineError):
-    def __str__(self) -> str:
-        return "OutdatedVaccineError"
+    pass
 
 
 class NotWearingMaskError(Exception):
-    def __str__(self) -> str:
-        return "NotWearingMaskError"
+    pass
